@@ -36,18 +36,20 @@ export function selectItem (item_id, variant_id = null) {
     let existing = null
     for (let k = 0; k < currentOrder.items.length; k++) {
         let eintrag = currentOrder.items[k]
-
         if (eintrag.item_id === item.id) {
-            // Prüfen, ob Variante existiert
             if (variant !== null) {
                 if (eintrag.variant_id === variant.id) {
                     existing = eintrag
+                    break
                 }
+            }
+            else {
+                existing = eintrag
+                break
             }
         }
     }
 
-    //
     if (existing !== null) {
         existing.quantity = existing.quantity + 1
     } else {
