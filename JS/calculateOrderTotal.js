@@ -1,4 +1,4 @@
-import { currentOrder } from "../main.js";
+import { currentOrder } from "../main.js"
 
 export function calculateOrderTotal() {
     let total = 0
