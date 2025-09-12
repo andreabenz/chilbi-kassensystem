@@ -1,19 +1,20 @@
 import {currentOrder} from "../main.js"
 
 export function removeItem(item_id, variant_id = null) {
-    for (let i = 0; i < currentOrder.items.length; i++) {
-        let item = currentOrder.items[i];
+    let index = currentOrder.items.findIndex(item =>
+        item.item_id === item_id &&
+        (variant_id === null || item.variant_id === variant_id)
+    )
 
-        if (item.item_id === item_id) {
-            if (variant_id === null || item.variant_id === variant_id) {
-                if (item.quantity > 1) {
-                    item.quantity = item.quantity - 1;
-                } else {
-                    currentOrder.items.splice(i, 1);
-                }
+    if (index !== -1) {
+        let item = currentOrder.items[index]
 
-                break
-            }
+        if (item.quantity > 1) {
+            item.quantity -= 1;
+        } else {
+            currentOrder.items.splice(index, 1);
         }
+    } else {
+        console.error('Fehler: Artikel nicht gefunden!')
     }
 }

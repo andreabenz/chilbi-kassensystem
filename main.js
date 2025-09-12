@@ -1,15 +1,15 @@
 import {selectItem} from "./JS/selectItem.js"
 import {removeItem} from "./JS/removeItem.js"
 import {setPaymentMethod} from "./JS/setPaymentMethod.js"
+import {saveOrder} from "./JS/saveOrder.js"
 
-export let currentOrder = {
+export const currentOrder = {
     items: [],
     paymentMethod: null,
     total: 0,
     paid: 0,
     change: 0,
     tip: 0
-
 }
 
 selectItem(104)
@@ -21,3 +21,5 @@ console.log(currentOrder.items)
 
 setPaymentMethod(3)
 console.log(currentOrder.paymentMethod)
+
+saveOrder("./JS/orders.json")
