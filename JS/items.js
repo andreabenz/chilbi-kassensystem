@@ -1,3 +1,11 @@
+//Zahlungsmittel
+export let paymentMethods = [
+    { id: 1, name: "Bar"},
+    { id: 2, name: "Twint"},
+    { id: 3, name: "Gutschein"},
+    { id: 4, name: "Helfer"} //für alles, was Helfer konsumieren, damit es im System gespeichert wird
+]
+
 // Kategorien
 export let categories = [
     { id: 1, name: "Pizza" },
