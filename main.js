@@ -1,7 +1,7 @@
-import {removeItem} from './JS/removeItem.js';
-import {saveAndResetOrder} from './JS/saveAndResetOrder.js';
-import {selectItem} from './JS/selectItem.js';
-import {setPaymentMethod} from './JS/setPaymentMethod.js';
+import { removeItem } from './JS/removeItem.js';
+import { saveAndResetOrder } from './JS/saveAndResetOrder.js';
+import { selectItem } from './JS/selectItem.js';
+import { setPaymentMethod } from './JS/setPaymentMethod.js';
 
 export const currentOrder = {
     items: [],

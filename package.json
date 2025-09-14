@@ -22,7 +22,8 @@
   "homepage": "https://github.com/andreabenz/chilbi-kassensystem#readme",
   "devDependencies": {
     "@biomejs/biome": "^2.2.4",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "vite-plugin-handlebars": "^2.0.0"
   },
   "dependencies": {
     "glob": "^11.0.3"

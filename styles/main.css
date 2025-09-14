@@ -1,4 +1,6 @@
-@import "./page.module.css";
+:root {
+    --color-dark: #313252;
+}
 
 * {
     box-sizing: border-box;
