@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router';
 import Page from '@/components/page';
+import { items } from '/JS/items';
 
 const MainPage = () => {
   return (
@@ -46,6 +47,30 @@ const MainPage = () => {
           </li>
         </ul>
       </div>
+
+      <h2>Artikel</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style={{ textAlign: 'left' }}>ID</th>
+            <th style={{ textAlign: 'left' }}>Name</th>
+            <th style={{ textAlign: 'left' }}>Kat.</th>
+            <th style={{ textAlign: 'right' }}>Grundpreis</th>
+          </tr>
+        </thead>
+        <tbody>
+          {items.map((item) => (
+            <tr key={item.id}>
+              <td>{item.id}</td>
+              <td>{item.name}</td>
+              <td>{item.category_id}</td>
+              <td style={{ textAlign: 'right' }}>
+                {item.base_price ? `CHF ${item.base_price.toFixed(2)}` : '-'}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </Page>
   );
 };
