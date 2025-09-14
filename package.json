@@ -23,5 +23,8 @@
   "devDependencies": {
     "@biomejs/biome": "^2.2.4",
     "vite": "^7.1.2"
+  },
+  "dependencies": {
+    "glob": "^11.0.3"
   }
 }
