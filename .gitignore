@@ -1,1 +1,3 @@
 .idea/
+/JS/orders.json
+node_modules
