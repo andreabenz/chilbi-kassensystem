@@ -20,8 +20,8 @@
     "url": "https://github.com/andreabenz/chilbi-kassensystem/issues"
   },
   "homepage": "https://github.com/andreabenz/chilbi-kassensystem#readme",
-  "dependencies": {},
   "devDependencies": {
+    "@biomejs/biome": "^2.2.4",
     "vite": "^7.1.2"
   }
 }
