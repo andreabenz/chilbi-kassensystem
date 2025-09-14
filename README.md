@@ -17,6 +17,15 @@ npm run start  # Production-Mode-Vorschau
 
 **Zum verteilen:**
 
+Zuerst muss ein HTTP server installiert werden, z.B. das `serve` NPM package:
+
+```bash
+npm i -g serve
+```
+
+Danach kann die App kompiliert und ausgeführt werden:
+
 ```bash
 npm run build   # Erstellt Verteilungs-Files in dist/ Ordner
+serve dist
 ```
