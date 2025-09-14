@@ -3,7 +3,7 @@ import {currentOrder} from "../main.js"
 
 export function selectItem (item_id, variant_id = null) {
     //Item suchen
-    let item = items.find(i => i.id === item_id) || null
+    let item = items.find(i => i.id === item_id)
 
     if (!item) {
         console.error("Fehler: Artikel nicht gefunden!")
@@ -16,7 +16,7 @@ export function selectItem (item_id, variant_id = null) {
 
     if (variant_id !== null) {
         if (item.category_id === 4) {
-            variant = variants.find(v => v.id === variant_id) || null
+            variant = variants.find(v => v.id === variant_id)
             if (!variant) {
                 console.error("Fehler: Variante nicht gefunden!")
                 return

@@ -3,7 +3,7 @@ import {currentOrder} from "../main.js"
 
 let orders = []
 
-export function saveOrder (file) {
+export function saveAndResetOrder (file) {
 
     //Vergangene Bestellungen laden
     let data = fs.readFileSync(file, "utf-8")

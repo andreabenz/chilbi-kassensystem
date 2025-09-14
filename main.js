@@ -1,7 +1,7 @@
 import {selectItem} from "./JS/selectItem.js"
 import {removeItem} from "./JS/removeItem.js"
 import {setPaymentMethod} from "./JS/setPaymentMethod.js"
-import {saveOrder} from "./JS/saveOrder.js"
+import {saveAndResetOrder} from "./JS/saveAndResetOrder.js"
 
 export const currentOrder = {
     items: [],
@@ -22,4 +22,4 @@ console.log(currentOrder.items)
 setPaymentMethod(3)
 console.log(currentOrder.paymentMethod)
 
-saveOrder("./JS/orders.json")
+saveAndResetOrder("./JS/orders.json")
