@@ -1,4 +1,12 @@
+@import "./page.module.css";
+
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
-  font-family: "Segoe UI", sans-serif;
+    font-family: "Ubuntu Sans", "Segoe UI", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
 }

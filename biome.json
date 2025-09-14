@@ -32,12 +32,18 @@
       "allowTrailingCommas": true
     },
     "formatter": {
-      "indentWidth": 2
+      "indentWidth": 2,
+      "lineWidth": 100
     }
   },
   "html": {
     "formatter": {
       "indentWidth": 2
+    }
+  },
+  "css": {
+    "formatter": {
+      "indentWidth": 4
     }
   },
   "assist": {
