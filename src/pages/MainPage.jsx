@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router';
 import Page from '@/components/page';
 
 const MainPage = () => {
@@ -21,27 +22,27 @@ const MainPage = () => {
         <h3>Admin</h3>
         <ul>
           <li>
-            <a href="/settings">Einstellungen</a>
+            <NavLink to="/settings">Einstellungen</NavLink>
           </li>
           <li>
-            <a href="/closing">Tagesabschluss</a>
+            <NavLink to="/closing">Tagesabschluss</NavLink>
           </li>
         </ul>
 
         <h3>Helfer</h3>
         <ul>
           <li>
-            <a href="/order">Aktuelle Bestellung</a>
+            <NavLink to="/order">Aktuelle Bestellung</NavLink>
           </li>
           <li>
-            <a href="/overview">Bestellungsübersicht</a>
+            <NavLink to="/overview">Bestellungsübersicht</NavLink>
           </li>
         </ul>
 
         <h3>Kunde</h3>
         <ul>
           <li>
-            <a href="/client">Kundenansicht</a>
+            <NavLink to="/client">Kundenansicht</NavLink>
           </li>
         </ul>
       </div>
