@@ -20,9 +20,9 @@ const NavBar = () => {
       setDateTime(new Date());
     }, 1000);
     return () => {
-      clearTimeout(handle);
+      clearInterval(handle);
     };
-  });
+  }, []);
 
   return (
     <nav className={styles.mainNav}>

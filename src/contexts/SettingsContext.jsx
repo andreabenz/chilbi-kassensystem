@@ -24,7 +24,7 @@ const SettingsContext = createContext({
  * @returns {JSX.Element} The provider component
  */
 export const SettingsContextProvider = ({ children }) => {
-  const [settings, setSettings] = useState();
+  const [settings, setSettings] = useState(settings);
   return (
     <SettingsContext.Provider value={{ settings, setSettings }}>
       {children}
