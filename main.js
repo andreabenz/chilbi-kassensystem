@@ -6,7 +6,7 @@ import { selectItem } from './JS/selectItem.js';
 import { setPaymentMethod } from './JS/setPaymentMethod.js';
 
 //leere Bestellung erstellen
-let currentOrder = emptyOrder();
+export let currentOrder = emptyOrder();
 
 const storage = new LocalStorageDriver();
 
