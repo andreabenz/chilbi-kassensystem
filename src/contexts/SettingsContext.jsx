@@ -14,7 +14,7 @@ import { settings } from '/JS/settings';
  */
 const SettingsContext = createContext({
   settings,
-  setSettings: (value) => {},
+  setSettings: (_value) => {},
 });
 
 /**

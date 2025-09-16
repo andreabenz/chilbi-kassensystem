@@ -1,6 +1,5 @@
 import { emptyOrder, removeItem, selectItem } from './JS/order.js';
-import { _pay, calculateOrderTotal, setPaymentMethod } from './JS/pay.js';
-import { FileStorageDriver } from './JS/storage-drivers/fileSyncSave.js';
+import { setPaymentMethod } from './JS/pay.js';
 import { LocalStorageDriver } from './JS/storage-drivers/localStorageSave.js';
 
 //leere Bestellung erstellen
