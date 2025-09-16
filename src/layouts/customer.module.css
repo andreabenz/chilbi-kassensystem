@@ -1,0 +1,32 @@
+.root {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 4em;
+
+    font-size: 1.7rem;
+}
+
+.section {
+    margin-block: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 40rem;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.mainContent {
+    border: 1px solid red; /* Remove once implemented */
+    flex-grow: 1;
+}
