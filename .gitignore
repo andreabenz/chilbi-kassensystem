@@ -5,7 +5,7 @@
 .fleet/
 
 # Build-Artefakte
-/JS/orders.json
+/JS/storage-drivers/orders.json
 dist/
 
 # NPM
