@@ -1,0 +1,10 @@
+.panel {
+    padding: 8px 12px;
+    background-color: var(--color-panel);
+    display: flex;
+    flex-direction: column;
+}
+
+.nopadding {
+    padding: initial;
+}

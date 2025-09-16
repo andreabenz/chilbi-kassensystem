@@ -5,8 +5,8 @@ import CustomerLayout from './layouts/Customer';
 import HelperLayout from './layouts/Helper';
 import ClientView from './pages/customer/ClientView';
 import DailyClosingPage from './pages/helper/DailyClosingPage';
-import OrderScreen from './pages/helper/OrderScreen';
 import OrdersOverviewPage from './pages/helper/OrdersOverviewPage';
+import OrderScreen from './pages/helper/order-screen/OrderScreen';
 import SettingsPage from './pages/helper/SettingsPage';
 import MainPage from './pages/MainPage';
 

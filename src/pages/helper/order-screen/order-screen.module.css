@@ -1,0 +1,13 @@
+.layout {
+    --spacing: 12px;
+
+    /* Make it take up rest of height */
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: var(--color-background);
+    gap: var(--spacing);
+    padding: var(--spacing);
+}

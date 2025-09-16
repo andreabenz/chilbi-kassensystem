@@ -1,0 +1,31 @@
+.button {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    background-color: var(--color-button);
+    padding: 8px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.button:hover,
+.button:active,
+.button.active {
+    background-color: color-mix(in srgb, var(--color-button) 80%, black);
+}
+
+.button image {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.button image img {
+    width: 100%;
+    height: 100%;
+}
