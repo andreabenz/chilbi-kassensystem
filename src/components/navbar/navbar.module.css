@@ -1,0 +1,43 @@
+.mainNav {
+    display: flex;
+    gap: 4em;
+    align-items: center;
+    background-color: var(--color-dark);
+    padding: 8px;
+}
+
+.mainNav * {
+    color: white;
+}
+
+.mainNav .leftNav,
+.mainNav .rightNav,
+.mainNav .centerNav {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mainNav .centerNav {
+    gap: 0.5em;
+}
+
+.linkButton {
+    all: unset;
+    padding: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.linkButton:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mainNav .centerNav {
+    margin-inline: auto;
+}

@@ -1,0 +1,14 @@
+:root {
+    --color-dark: #313252;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Ubuntu Sans", "Segoe UI", "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
