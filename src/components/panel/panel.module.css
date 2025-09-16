@@ -1,0 +1,8 @@
+.panel {
+    padding: 8px 12px;
+    background-color: var(--color-panel);
+}
+
+.nopadding {
+    padding: initial;
+}
